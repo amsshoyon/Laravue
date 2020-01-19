@@ -48,7 +48,7 @@ export default {
                     }
                 };
                 axios
-                    .get("/api/logout", axiosConfig)
+                    .get("/api/logoutt", axiosConfig)
                     .then(response => {
                         // localStorage.removeItem("access_token");
                         console.log(response.data);

@@ -2111,7 +2111,7 @@ __webpack_require__.r(__webpack_exports__);
             Authorization: "Bearer " + token
           }
         };
-        axios.get("/api/logout", axiosConfig).then(function (response) {
+        axios.get("/api/logoutt", axiosConfig).then(function (response) {
           // localStorage.removeItem("access_token");
           console.log(response.data);
         })["catch"](function (error) {

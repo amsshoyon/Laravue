@@ -80,5 +80,6 @@ class AppController extends Controller
             'message' => 'You are Logged out.',
         ];
         return response()->json($json, '200');
+        // return response()->json($request->user());
     }
 }
