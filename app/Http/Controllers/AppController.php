@@ -72,14 +72,13 @@ class AppController extends Controller
     //================== Logout ======================
     //================================================
     public function logout(Request $request) {
-        // $request->user()->token()->revoke();
+        $request->user()->token()->revoke();
 
-        // $json = [
-        //     'success' => true,
-        //     'code' => 200,
-        //     'message' => 'You are Logged out.',
-        // ];
-        // return response()->json($json, '200');
-        return response()->json($request->user());
+        $json = [
+            'success' => true,
+            'code' => 200,
+            'message' => 'You are Logged out.',
+        ];
+        return response()->json($json, '200');
     }
 }
